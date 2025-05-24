@@ -4,6 +4,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import logo from "../assets/Untitled_logo_2_free-file.jpg";
+const API_URL = import.meta.env.VITE_API_URL;
 
 function LoginPage() {
   const formik = useFormik({
@@ -18,7 +19,7 @@ function LoginPage() {
     onSubmit: async (values, { setSubmitting, setStatus }) => {
       console.log("Trying to log in with:", values);
       try {
-        const response = await axios.post("http://127.0.0.1:8000/api/token/", {
+        const response = await axios.post(`${API_URL}token/`, {
           username: values.email,
           password: values.password,
         });
