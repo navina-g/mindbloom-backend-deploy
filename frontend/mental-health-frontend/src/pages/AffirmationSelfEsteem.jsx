@@ -15,7 +15,7 @@ export default function AffirmationSelfEsteem() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 to-purple-100 p-6 flex flex-col items-center">
       <h1 className="text-4xl font-bold text-purple-700 mb-2 text-center">
-        🌟 Affirmations for Self-Esteem
+        Affirmations for Self-Esteem
       </h1>
       <p className="text-center text-gray-700 max-w-xl mb-8">
         Repeat these daily to boost your self-worth and confidence. Let these positive thoughts anchor your day.

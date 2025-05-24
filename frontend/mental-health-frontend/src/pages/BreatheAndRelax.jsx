@@ -9,7 +9,7 @@ export default function BreatheAndRelax() {
     <div className="min-h-screen bg-gradient-to-br from-pink-50 to-purple-100 p-6 flex flex-col items-center">
       {/* Header */}
       <div className="w-full max-w-3xl bg-white rounded-xl shadow-lg p-8 mb-8">
-        <h1 className="text-4xl font-extrabold text-purple-800 mb-4">🧘‍♀️ Breathe and Relax</h1>
+        <h1 className="text-4xl font-extrabold text-purple-800 mb-4">Breathe and Relax</h1>
         <p className="text-gray-700 mb-6">
           A short guided breathing video to help calm your mind and reduce anxiety.
         </p>

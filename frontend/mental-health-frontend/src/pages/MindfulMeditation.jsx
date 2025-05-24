@@ -6,7 +6,7 @@ export default function MindfulMeditation() {
     <div className="min-h-screen bg-gradient-to-br from-pink-50 to-purple-100 p-6 flex flex-col items-center">
       <div className="max-w-3xl mx-auto text-center">
         <h1 className="text-4xl font-bold text-indigo-800 mb-4">
-          🧘‍♂️ Mindful Meditation
+           Mindful Meditation
         </h1>
         <p className="text-gray-700 mb-6">
           Mindfulness is the gentle practice of being fully present in the moment —
@@ -23,7 +23,7 @@ export default function MindfulMeditation() {
           ></iframe>
         </div>
 
-        <h2 className="text-2xl font-semibold text-indigo-700 mb-2">✨ Getting Started</h2>
+        <h2 className="text-2xl font-semibold text-indigo-700 mb-2">Getting Started</h2>
         <ul className="text-left text-gray-800 space-y-2 mb-6">
           <li>• Sit comfortably and close your eyes</li>
           <li>• Take slow, deep breaths</li>
@@ -32,7 +32,7 @@ export default function MindfulMeditation() {
         </ul>
 
         <p className="text-indigo-600 font-medium italic mb-8">
-          “You can’t stop the waves, but you can learn to surf.” — Jon Kabat-Zinn
+          “You can’t stop the waves, but you can learn to surf.” 
         </p>
 
         <Link
