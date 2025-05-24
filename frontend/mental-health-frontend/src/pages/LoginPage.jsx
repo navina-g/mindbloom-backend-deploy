@@ -19,7 +19,7 @@ function LoginPage() {
     onSubmit: async (values, { setSubmitting, setStatus }) => {
       console.log("Trying to log in with:", values);
       try {
-        const response = await axios.post(`${API_URL}token/`, {
+        const response = await axios.post("https://mindbloom-backend-v2-ase0ctd8bzdvaqd9.southindia-01.azurewebsites.net/api/token/", {
           username: values.email,
           password: values.password,
         });
