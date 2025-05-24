@@ -3,6 +3,8 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { Laugh, Smile, Meh, Frown, Angry } from "lucide-react";
+const API_BASE_URL = "https://mindbloom-backend-v2-ase0ctd8bzdvaqd9.southindia-01.azurewebsites.net/api/";
+
 
 // ✅ Added header import
 import Header from "../components/Header";
@@ -33,7 +35,7 @@ export default function MoodTrackerPage() {
 
   async function fetchMoods() {
     try {
-      const res = await axios.get("http://127.0.0.1:8000/api/moods/", authConfig);
+      const res = await axios.get(`${API_BASE_URL}moods/`, authConfig);
       console.log("✅ fetched moods:", res.data);
       setMoodHistory(res.data);
     } catch (err) {
@@ -48,7 +50,7 @@ export default function MoodTrackerPage() {
 
     try {
       const res = await axios.post(
-        "http://127.0.0.1:8000/api/moods/",
+        `${API_BASE_URL}moods/`,
         { mood: selectedMood },
         authConfig
       );
