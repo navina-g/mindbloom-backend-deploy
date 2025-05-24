@@ -26,11 +26,7 @@ SECRET_KEY = 'django-insecure-5r2w1br2i%^jlz)(-ta5j$&z5e)0u00%w9ssm*qa5ubr(s&gq*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [
-    'mindbloom-backend-v2-ase0ctd8bzdvaqd9.southindia-01.azurewebsites.net',
-    'localhost',  # optional, for local testing
-]
-
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -81,7 +77,7 @@ TEMPLATES = [
     },
 ]
 CORS_ALLOWED_ORIGINS = [
-    "https://polite-beach-0d065a400.6.azurestaticapps.net"
+    "https://orange-desert-0473b9e00.6.azurestaticapps.net"
 ]
 
 CORS_ALLOW_CREDENTIALS = True
