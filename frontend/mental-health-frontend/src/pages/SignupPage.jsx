@@ -1,5 +1,6 @@
 // src/pages/SignupPage.jsx
 import React from "react";
+const API_URL = import.meta.env.VITE_API_URL;
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
@@ -19,7 +20,7 @@ function SignupPage() {
     }),
     onSubmit: async (values, { setSubmitting, setStatus }) => {
       try {
-        const response = await axios.post("http://127.0.0.1:8000/api/signup/", values);
+        const response = await axios.post(`${API_URL}signup/`, values);
         console.log("Signup success:", response.data);
         setStatus({ success: "Signup successful!" });
 
