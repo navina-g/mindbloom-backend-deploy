@@ -20,7 +20,7 @@ function SignupPage() {
     }),
     onSubmit: async (values, { setSubmitting, setStatus }) => {
       try {
-        const response = await axios.post(`${API_URL}signup/`, values);
+        const response = await axios.post("https://mindbloom-backend-v2-ase0ctd8bzdvaqd9.southindia-01.azurewebsites.net/api/signup/", values);
         console.log("Signup success:", response.data);
         setStatus({ success: "Signup successful!" });
 
