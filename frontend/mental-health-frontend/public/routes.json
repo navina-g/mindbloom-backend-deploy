@@ -2,6 +2,6 @@
   "routes": [],
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/static/*", "/assets/*"]
+    "exclude": ["/static/*", "/images/*", "/api/*"]
   }
 }
