@@ -76,7 +76,14 @@ TEMPLATES = [
         },
     },
 ]
-CORS_ALLOW_ALL_ORIGINS = True  # Only for development
+CORS_ALLOWED_ORIGINS = [
+    "https://polite-beach-0d065a400.6.azurestaticapps.net"
+]
+
+CORS_ALLOW_CREDENTIALS = True
+
+
+
 WSGI_APPLICATION = 'mental_health_api.wsgi.application'
 
 
