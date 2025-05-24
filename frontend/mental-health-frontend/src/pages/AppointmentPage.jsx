@@ -2,6 +2,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import Header from "../components/Header"; // ✅ Step 1: Import Header
+const API_BASE_URL = "https://mindbloom-backend-v2-ase0ctd8bzdvaqd9.southindia-01.azurewebsites.net/api/";
 
 const therapists = ["Dr. M Shyamala Devi", "Dr. Aarthi Radhika Inuganti", "Dr. Latha Janaki"];
 
@@ -44,7 +45,7 @@ export default function AppointmentPage() {
 
       try {
         await axios.post(
-          "http://127.0.0.1:8000/api/appointments/",
+          `${API_BASE_URL}appointments/`, 
           {
             therapist_name: selectedTherapist,
             date: formattedDate,
