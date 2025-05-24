@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Header from "../components/Header";
+const API_BASE_URL = "https://mindbloom-backend-v2-ase0ctd8bzdvaqd9.southindia-01.azurewebsites.net/api/";
 
 export default function UserDashboard() {
   const [moods, setMoods] = useState([]);
@@ -32,7 +33,7 @@ export default function UserDashboard() {
 
   const fetchMoods = async () => {
     try {
-      const res = await axios.get("http://127.0.0.1:8000/api/moods/", config);
+      const res = await axios.get(`${API_BASE_URL}moods/`, config);
       setMoods(res.data.slice(0, 7)); // Last 7 entries
     } catch (err) {
       console.error("Mood fetch error:", err);
@@ -41,7 +42,7 @@ export default function UserDashboard() {
 
   const fetchAppointments = async () => {
     try {
-      const res = await axios.get("http://127.0.0.1:8000/api/appointments/", config);
+      const res = await axios.get(`${API_BASE_URL}appointments/`, config);
       setAppointments(res.data);
     } catch (err) {
       console.error("Appointment fetch error:", err);
