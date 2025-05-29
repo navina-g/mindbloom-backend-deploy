@@ -90,7 +90,18 @@ npm start
   5. D – Dependency Inversion Principle (DIP)
     Frontend doesn't depend on backend implementation details — it uses clean APIs (abstractions).
     Axios or fetch in React handles communication without knowing backend internals.
+
+### MindBloom – Model View Architecture
     
-    
+  ![Mindbloom mvc drawio](https://github.com/user-attachments/assets/5ca16a46-e0ff-4a46-aa78-24832abd59c3)
+
   
+| Layer        | Component                              | Role                                                         |
+| ------------ | -------------------------------------- | ------------------------------------------------------------ |
+| **Model**    | Django ORM (e.g., `User`, `Resources`) | Defines database schema and handles business data            |
+| **View**     | Django Views / DRF Viewsets            | Contains logic to process HTTP requests and return responses |
+| **Template** | REST API / HTML frontend               | Sends data to the frontend via JSON or renders HTML pages    |
+| **Frontend** | React / HTML & CSS                     | UI that users interact with; consumes API from backend       |
+| **Hosting**  | Azure App Service                      | Hosts Django backend (deployed via GitHub Actions)           |
+
   
